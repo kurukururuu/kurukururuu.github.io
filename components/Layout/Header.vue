@@ -5,7 +5,7 @@
 
     <div class="profile-wrapper">
       <div class="bg-white p-2 w-56 rounded-full shadow-lg">
-        <img src="/yukkii.jpg" alt="photo" class="w-full rounded-full">
+        <img src="/fajar.jpg" alt="photo" class="w-full rounded-full">
       </div>
     </div>
   </div>
