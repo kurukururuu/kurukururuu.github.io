@@ -4,7 +4,7 @@ description: K-Hub Working Group on Women and Preventing/ Countering Violent Ext
 url: https://womenandcve.org/
 img: /projects/wgwc.png
 alt: WGWC
-date:
-  start: '2018-03-01T17:00:00.000Z'
-  end: '2019-01-30T17:00:00.000Z'
+status: Finished
+start: '2018-03-01T17:00:00.000Z'
+end: '2019-01-30T17:00:00.000Z'
 ---

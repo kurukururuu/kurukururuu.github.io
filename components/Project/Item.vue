@@ -2,9 +2,12 @@
   <div class="relative">
     <div class="border rounded-lg w-full p-4 my-4" :class="list ? 'text-justify': 'text-center'">
       <img :src="data.img" alt="cover" class="h-40 mb-4 cursor-pointer transition-all duration-300 ease-in-out transform hover:scale-105" :class="{'mx-auto':!list}" @click="zoom = true">
-      <a :href="data.url" class="text-xl font-semibold clipped clip-2">{{data.title}}</a>
+      <a :href="data.url" target="_blank" class="text-xl font-semibold clipped clip-2 h-16">{{data.title}}</a>
       <div v-if="list" class="text-lg"> {{data.description}}</div>
-      <div class="mt-4">{{formatDate(duration.start)}} - {{formatDate(duration.end)}}</div>
+      <div class="my-4">{{formatDate(data.start)}} - {{formatDate(data.end)}}</div>
+      <div class="flex justify-end w-full">
+        <a v-if="!list" :href="data.url" target="_blank" class="underline">See website &#8594;</a>
+      </div>
     </div>
 
     <transition name="fade">
@@ -45,9 +48,6 @@ export default {
   computed: {
     list() {
       return this.mode === 'list'
-    },
-    duration() {
-      return this.data.date
     }
   }
 }
