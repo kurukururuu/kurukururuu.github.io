@@ -57,3 +57,14 @@
 		display : none !important;
 	}
 }
+
+@media (min-width: 1220px) and (max-width: 1439px) {
+	.container {
+		max-width: 90%;
+	}
+}
+@media (min-width: 768px) and (max-width: 1219px) {
+	.container {
+		max-width: 95%;
+	}
+}

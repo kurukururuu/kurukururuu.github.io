@@ -1,7 +1,7 @@
 <template>
   <div>
-    <div class="text-3xl font-semibold text-opacity-80">Most Recent / Ongoing work:</div>
-    <div class="grid grid-cols-3 gap-4">
+    <div class="text-3xl font-semibold text-opacity-80 mb-8">Most Recent / Ongoing work:</div>
+    <div class="grid grid-cols-3 gap-10">
       <template v-for="item,i in data">
         <ProjectItem :key="i" mode="grid" :data="item" class="h-full" />
       </template>

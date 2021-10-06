@@ -1,12 +1,19 @@
 <template>
   <div class="relative">
-    <div class="border rounded-lg w-full p-4 my-4" :class="list ? 'text-justify': 'text-center'">
-      <img :src="data.img" alt="cover" class="h-40 mb-4 cursor-pointer transition-all duration-300 ease-in-out transform hover:scale-105" :class="{'mx-auto':!list}" @click="zoom = true">
-      <a :href="data.url" target="_blank" class="text-xl font-semibold clipped clip-2 h-16">{{data.title}}</a>
-      <div v-if="list" class="text-lg"> {{data.description}}</div>
-      <div class="my-4">{{formatDate(data.start)}} - {{formatDate(data.end)}}</div>
-      <div class="flex justify-end w-full">
-        <a v-if="!list" :href="data.url" target="_blank" class="underline">See website &#8594;</a>
+    <!-- <div class="border rounded-lg w-full p-4 my-4" :class="list ? 'text-justify': 'text-center'"> -->
+      <!-- <img :src="data.img" alt="cover" class="h-40 mb-4 cursor-pointer transition-all duration-300 ease-in-out transform hover:scale-105" :class="{'mx-auto':!list}" @click="zoom = true"> -->
+    <div class="wrapper"
+      :style="`background-image:url(${data.img})`">
+      <div class="overlay"></div>
+      <a :href="data.url" target="_blank" class="text-xl font-semibold clipped clip-2 h-16 mb-4">{{data.title}}</a>
+      <div class="details">
+        <div>
+          <div class="description clipped clip-5 text-sm">{{data.description}}</div>
+          <div class="my-4 text-sm">{{formatDate(data.start)}} - {{formatDate(data.end)}}</div>
+        </div>
+        <div class="flex justify-end w-full text-sm">
+          <a v-if="!list" :href="data.url" target="_blank" class="underline font-semibold">See website &#8594;</a>
+        </div>
       </div>
     </div>
 
@@ -60,10 +67,37 @@ export default {
 
 .fade-enter-active, .fade-leave-active {
   @apply max-w-screen-2xl max-h-screen;
-  // transition: opacity .5s;
 }
 .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
-  // opacity: 0;
   @apply max-w-0 max-h-0;
+}
+
+.wrapper {
+  @apply h-80 bg-no-repeat bg-cover rounded-xl p-4;
+  @apply flex flex-col;
+  .overlay {
+    @apply transition-all duration-300 ease-in-out;
+    @apply bg-gradient-to-b to-transparent absolute top-0 left-0 w-full h-full rounded-xl;
+
+    // this is extended theme color: from-black-opa-50
+    // but somehow apply doesn't work for extended theme, but plugin does
+    --tw-gradient-from: #0008;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
+  }
+  &:hover {
+    .overlay {
+      // @apply bg-black-opa-50; // same case
+      background-color: #0008;
+    }
+
+    .details {
+      @apply max-h-96 flex-1 flex flex-col justify-between;
+    }
+  }
+
+  .details {
+    @apply transition-all duration-300 ease-in-out;
+    @apply text-lg max-h-0 overflow-hidden relative;
+  }
 }
 </style>
