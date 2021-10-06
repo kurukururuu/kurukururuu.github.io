@@ -11,28 +11,19 @@
       <ProjectRecent :data="recentProjects" class="mb-8" />
       <ProjectList :data="projects" />
       <!-- Place this tag where you want the button to render. -->
-      <GithubButton
+      <gh-btns-follow
         class="fixed bottom-8 right-8"
-        href="https://github.com/kurukururuu"
-        data-color-scheme="no-preference: light; light: light; dark: dark;"
-        data-size="large"
-        aria-label="Follow @kurukururuu on GitHub">
-        Follow @kurukururuu
-      </GithubButton>
+        user="kurukururuu"
+      />
     </div>
   </div>
 </template>
 
 <script>
-import GithubButton from 'vue-github-button'
-
 export default {
-  components: {
-    GithubButton
-  },
   async asyncData({ $content, params }) {
-    const recentProjects = await $content('projects', params.slug).sortBy('date.start', 'desc').limit(3).fetch()
-    const projects = await $content('projects', params.slug).sortBy('date.start', 'desc').skip(3).fetch()
+    const recentProjects = await $content('projects').sortBy('start', 'desc').limit(3).fetch()
+    const projects = await $content('projects').sortBy('start', 'desc').skip(3).fetch()
     return { recentProjects, projects }
   }
 }
