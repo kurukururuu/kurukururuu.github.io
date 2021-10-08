@@ -1,11 +1,17 @@
 <template>
   <div>
     <div class="text-3xl font-semibold text-opacity-80 mb-4">More work:</div>
-    <ul class="list-disc list-inside">
+    <!-- <ul class="list-disc list-inside">
       <template v-for="item,i in data">
         <li :key="i"><a :href="item.url" target="_blank" class="text-xl hover:underline">{{ item.title }}</a></li>
       </template>
-    </ul>
+    </ul> -->
+    
+    <div class="grid grid-cols-3 gap-10">
+      <template v-for="item,i in data">
+        <ProjectItem :key="i" mode="grid" :data="item" class="h-full" />
+      </template>
+    </div>
   </div>
 </template>
 

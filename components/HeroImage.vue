@@ -1,5 +1,5 @@
 <template>
-  <div class="relative mb-20 h-screen">
+  <div class="relative mb-20">
     <img src="https://source.unsplash.com/random" alt="cover"
       class="w-full h-80 object-cover shadow-lg">
 
@@ -15,11 +15,11 @@
       <div class="text-xl">If you have any questions, please contact me <a href="mailto:apriansyah.fajar94@gmail.com" class="underline">here</a>.</div>
     </div>
 
-    <div class="absolute bottom-4 w-full flex justify-center">
+    <!-- <div class="absolute bottom-4 w-full flex justify-center">
       <button @click="actionScroll">
         <MouseScroll class="cursor-pointer" />
       </button>
-    </div>
+    </div> -->
   </div>
 </template>
 
