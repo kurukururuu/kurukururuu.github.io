@@ -1,7 +1,7 @@
 <template>
   <div>
     <HeroImage />
-    <div class="py-20 container mx-auto">
+    <div class="py-20 container mx-auto mobile:py-10">
       
       <ProjectRecent :data="recentProjects" class="mb-20" />
       <ProjectList :data="projects" />

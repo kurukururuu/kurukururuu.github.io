@@ -11,7 +11,7 @@
     <transition name="fade">
       <ScrollTopComponent
         v-if="showScrollTop"
-        class="fixed bottom-8 right-16 cursor-pointer"
+        class="fixed bottom-4 right-8 cursor-pointer"
         @click="handleScroll" />
     </transition>
   </div>

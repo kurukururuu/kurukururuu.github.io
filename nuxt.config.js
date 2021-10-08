@@ -4,7 +4,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'Fajar Apriansyah (github@kurukururuu)',
+    title: 'Fajar Apriansyah',
     htmlAttrs: {
       lang: 'en'
     },

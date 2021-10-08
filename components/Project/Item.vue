@@ -9,7 +9,7 @@
       <div class="details">
         <div>
           <div class="description clipped clip-5 text-sm">{{data.description}}</div>
-          <div class="my-4 text-sm">{{formatDate(data.start)}} - {{formatDate(data.end)}}</div>
+          <div class="my-4 text-xs">{{formatDate(data.start)}} - {{formatDate(data.end)}}</div>
         </div>
         <div class="flex justify-end w-full text-sm">
           <a v-if="!list" :href="data.url" target="_blank" class="underline font-semibold">See website &#8594;</a>
@@ -73,7 +73,7 @@ export default {
 }
 
 .wrapper {
-  @apply h-80 bg-no-repeat bg-cover rounded-xl p-4;
+  @apply h-80 bg-no-repeat bg-cover rounded-xl p-4 mobile:h-60;
   @apply flex flex-col;
   .overlay {
     @apply transition-all duration-300 ease-in-out;
@@ -96,8 +96,16 @@ export default {
   }
 
   .details {
+    @apply max-h-0;
     @apply transition-all duration-300 ease-in-out;
-    @apply text-lg max-h-0 overflow-hidden relative;
+    @apply text-lg overflow-hidden relative;
+
+    .description {
+      @media (max-width: 768px) {
+        -webkit-line-clamp: 3;
+		    max-height : calc(1em * 1.5 * 3);
+      }
+    }
   }
 }
 </style>

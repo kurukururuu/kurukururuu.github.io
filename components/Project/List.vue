@@ -1,15 +1,9 @@
 <template>
   <div>
-    <div class="text-3xl font-semibold text-opacity-80 mb-4">More work:</div>
-    <!-- <ul class="list-disc list-inside">
+    <div class="text-3xl font-semibold text-opacity-80 mb-4 mobile:text-2xl">More works:</div>
+    <div class="grid grid-cols-3 gap-10 mobile:flex mobile:flex-col">
       <template v-for="item,i in data">
-        <li :key="i"><a :href="item.url" target="_blank" class="text-xl hover:underline">{{ item.title }}</a></li>
-      </template>
-    </ul> -->
-    
-    <div class="grid grid-cols-3 gap-10">
-      <template v-for="item,i in data">
-        <ProjectItem :key="i" mode="grid" :data="item" class="h-full" />
+        <ProjectItem :key="i" mode="grid" :data="item" class="h-full mobile:w-full mobile:mx-auto" />
       </template>
     </div>
   </div>
