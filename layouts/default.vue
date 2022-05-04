@@ -1,6 +1,6 @@
 <template>
   <div class="dark:bg-dark-main dark:text-gray-300 transition-colors ease-in-out duration-150 min-h-screen font-roboto grid grid-cols-10 h-screen overflow-hidden">
-    <div class="col-span-1 dark:bg-dark-tertiary dark:bg-opacity-100">
+    <div class="col-span-1 mobile:hidden dark:bg-dark-tertiary dark:bg-opacity-100">
       <div class="border-opacity-50 h-screen flex flex-col justify-center">
         <ul class="sections">
           <li id="about" @click="scrollToSection">
@@ -12,7 +12,7 @@
         </ul>
       </div>
     </div>
-    <div class="col-span-9 overflow-auto">
+    <div class="col-span-9 mobile:col-span-10 overflow-auto">
       <Nuxt />
 
       <transition name="fade">

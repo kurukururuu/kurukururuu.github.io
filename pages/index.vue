@@ -6,7 +6,7 @@
       <div class="text-4xl dark:text-green-500 font-semibold text-opacity-80 dark:text-opacity-100 mb-4 mobile:text-2xl uppercase">Projects</div>
       <div class="text-lg mb-4">Chosen list from my working projects.</div>
       <ProjectList :data="projects" />
-      <NuxtLink to="/projects" class="mt-4 right-0 float-right">and many more...</NuxtLink>
+      <NuxtLink to="/projects" class="mt-4 right-0 float-right">see more</NuxtLink>
     </section>
   </div>
 </template>
