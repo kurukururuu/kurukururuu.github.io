@@ -1,5 +1,5 @@
 <template>
-  <div class="relative">
+  <div class="relative p-2 text-gray-300 bg-dark-secondary rounded-xl">
     <!-- <div class="border rounded-lg w-full p-4 my-4" :class="list ? 'text-justify': 'text-center'"> -->
       <!-- <img :src="data.img" alt="cover" class="h-40 mb-4 cursor-pointer transition-all duration-300 ease-in-out transform hover:scale-105" :class="{'mx-auto':!list}" @click="zoom = true"> -->
     <div class="wrapper"
@@ -73,7 +73,7 @@ export default {
 }
 
 .wrapper {
-  @apply h-80 bg-no-repeat bg-cover rounded-xl p-4 mobile:h-60;
+  @apply h-80 bg-no-repeat rounded-xl bg-cover p-4 mobile:h-60;
   @apply flex flex-col;
   .overlay {
     @apply transition-all duration-300 ease-in-out;

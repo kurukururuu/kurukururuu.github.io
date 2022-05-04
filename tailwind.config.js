@@ -1,10 +1,15 @@
 // tailwind.config.js
 module.exports = {
+  darkMode: 'class',
   theme: {
+    darkSelector: '.dark-mode',
     extend: {
       colors: {
         'black-opa-50': '#0008',
-        'gray-main': '#3e3b39'
+        'gray-main': '#3e3b39',
+        'dark-main': '#292929',
+        'dark-secondary': '#1e1e1e',
+        'dark-tertiary': '#121212'
       },
       fontFamily: {
         'montserrat': ['Montserrat'],
@@ -21,7 +26,7 @@ module.exports = {
         lg: { min: '1025px', max: '1439px' },
         xl: { min: '1440px' }
       },
-    }
+    },
   },
   plugins: [
     require('@tailwindcss/aspect-ratio'),

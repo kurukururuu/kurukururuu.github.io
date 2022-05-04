@@ -21,7 +21,8 @@ export default {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
-    '~/assets/scss/helper.scss'
+    '~/assets/scss/helper.scss',
+    '~/assets/scss/global.scss'
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
@@ -46,6 +47,7 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
+    '@nuxtjs/color-mode',
   ],
 
   // Content module configuration: https://go.nuxtjs.dev/config-content
@@ -60,5 +62,11 @@ export default {
       Roboto: true,
       Monserrat: true,
     }
+  },
+
+  // color-mode
+  colorMode: {
+    classSuffix: '',
+    fallback: 'dark', // fallback value if not system preference found
   }
 }
