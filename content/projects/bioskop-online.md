@@ -6,5 +6,5 @@ img: /projects/bioskop-online.png
 alt: Bioskop Online
 status: Ongoing
 start: '2021-11-01T17:00:00.000Z'
-end: null
+end: '2022-06-17T17:00:00.000Z'
 ---
