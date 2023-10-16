@@ -11,7 +11,7 @@
 
     <div class="text-center mt-40 mb-20 mobile:mb-10 mx-auto container">
       <div class="text-3xl mb-4 mobile:text-xxl">Hi, name is<br class="desktop:hidden" /> Fajar Apriansyah</div>
-      <div class="text-xl mb-8 mobile:text-sm">A full-time software engineer currently working at <a href="https://photon.com" class="font-bold hover:underline">Photon Interactive Indonesia</a>. 4+ years in web developing experience, with 3+ years in <a href="https://vuejs.org" class="hover:underline">Vue.js</a> mastery. Figma and VS Code are my best friend, to turn client requirements into web-components.</div>
+      <div class="text-xl mb-8 mobile:text-sm">A full-time software engineer currently working at <a href="https://photon.com" target="_blank" class="font-bold hover:underline text-yellow-600">Photon Interactive Indonesia</a>. 4+ years in web developing experience, with 3+ years in <a href="https://vuejs.org" target="_blank" class="hover:underline text-pink-500">Vue.js</a> mastery and 2+years in <a href="https://react.dev" target="_blank" class="hover:underline text-pink-500">React.js</a>. Figma and VS Code are my best friend, to turn client requirements into web-components.</div>
       <div class="text-xl mobile:text-sm">If you have any questions, please contact me <a href="mailto:apriansyah.fajar94@gmail.com" class="underline">here</a>.</div>
     </div>
 

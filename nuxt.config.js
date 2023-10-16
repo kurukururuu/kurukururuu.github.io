@@ -1,3 +1,5 @@
+import "@nuxt/babel-preset-app/";
+
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
@@ -31,7 +33,14 @@ export default {
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
-  components: true,
+  components: {
+    dirs: [
+      '~/components',
+      '~/components/atoms',
+      '~/components/molecules',
+      '~/components/organisms',
+    ]
+  },
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [

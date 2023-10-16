@@ -1,5 +1,6 @@
 <template>
   <div class="dark:bg-dark-main dark:text-gray-300 transition-colors ease-in-out duration-150 min-h-screen font-roboto">
+    <NuxtLink to="/" class="fixed top-8 left-8 hover:underline p-2 z-10">&larr; Back to Home</NuxtLink>
     <Nuxt />
 
     <transition name="fade">
