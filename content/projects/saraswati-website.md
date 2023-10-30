@@ -5,6 +5,7 @@ url: https://saraswati.global/
 img: /projects/saraswati.png
 alt: Saraswati
 status: Finished
+tags: ['vuejs', 'nuxtjs', 'tailwindcss']
 start: '2017-05-01T17:00:00.000Z'
 end: '2018-01-30T17:00:00.000Z'
 ---

@@ -5,6 +5,7 @@ url: https://khubforjustice.org/
 img: /projects/khub-for-justice.png
 alt: K-Hub for Justice
 status: Finished
+tags: ['vuejs', 'nuxtjs', 'bulmacss']
 start: '2018-03-01T17:00:00.000Z'
 end: '2019-01-30T17:00:00.000Z'
 ---

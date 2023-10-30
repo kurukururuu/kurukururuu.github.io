@@ -5,6 +5,7 @@ url: https://legaldrafting.vercel.app/
 img: /projects/legaldrafting.png
 alt: SOLID
 status: Finished
+tags: ['vuejs', 'nuxtjs', 'tailwindcss']
 start: '2021-06-09T17:00:00.000Z'
 end: '2021-08-30T17:00:00.000Z'
 ---

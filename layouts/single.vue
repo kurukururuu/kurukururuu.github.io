@@ -1,20 +1,28 @@
 <template>
-  <div class="dark:bg-dark-main dark:text-gray-300 transition-colors ease-in-out duration-150 min-h-screen font-roboto">
-    <NuxtLink to="/" class="fixed top-8 left-8 hover:underline p-2 z-10">&larr; Back to Home</NuxtLink>
+  <div
+    class="dark:bg-dark-main dark:text-gray-300 transition-colors ease-in-out duration-150 min-h-screen font-roboto"
+  >
+    <NuxtLink
+      to="/"
+      class="fixed top-8 left-8 hover:underline transition-all duration-100 ease-in-out p-2 z-10"
+      >&larr; Back to Home</NuxtLink
+    >
     <Nuxt />
 
     <transition name="fade">
       <ScrollTopComponent
         v-if="showScrollTop"
         class="fixed bottom-4 right-8 cursor-pointer"
-        @click="handleScrollTop" />
+        @click="handleScrollTop"
+      />
     </transition>
-    
-    <DarkModeSwitch :initial-state="darkMode" class="fixed top-8 right-8" @switched="onSwitched" />
-    <gh-btns-follow
-      class="fixed bottom-8 left-8"
-      user="kurukururuu"
+
+    <DarkModeSwitch
+      :initial-state="darkMode"
+      class="fixed top-8 right-8"
+      @switched="onSwitched"
     />
+    <gh-btns-follow class="fixed bottom-8 left-8" user="kurukururuu" />
   </div>
 </template>
 
@@ -24,11 +32,11 @@ import 'vue-dark-mode-switch/dist/vue-dark-mode-switch.css'
 
 export default {
   components: {
-    DarkModeSwitch
+    DarkModeSwitch,
   },
   data() {
     return {
-      showScrollTop: false
+      showScrollTop: false,
     }
   },
   computed: {
@@ -38,32 +46,27 @@ export default {
     scrollTop() {
       if (!this.$el) return 0
       return this.$el.scrollTop
-    }
+    },
   },
   mounted() {
     if (process.browser) {
       window.addEventListener('scroll', this.onScroll)
     }
   },
-  beforeDestroy () {
+  beforeDestroy() {
     window.removeEventListener('scroll', this.onScroll)
   },
   methods: {
-    onSwitched (isSwitched) {
-      console.log('dark mode is enabled :', isSwitched)
+    onSwitched(isSwitched) {
       this.$store.commit('TOGGLE_DARK_MODE', !this.darkMode)
       this.$colorMode.preference = isSwitched ? 'dark' : 'light'
     },
     handleScrollTop() {
-      this.$el.scrollIntoView({top:0, behavior: 'smooth'})
+      this.$el.scrollIntoView({ top: 0, behavior: 'smooth' })
     },
-    onScroll (e) {
-      if (window.top.scrollY > 500) {
-        this.showScrollTop = true
-      } else if (window.top.scrollY === 0) {
-        this.showScrollTop = false
-      }
-    }
+    onScroll() {
+      this.showScrollTop = window.scrollY > 500
+    },
   },
 }
 </script>

@@ -25,6 +25,7 @@
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.14.7",
+    "@babel/plugin-proposal-optional-chaining": "^7.21.0",
     "@commitlint/cli": "^12.1.4",
     "@commitlint/config-conventional": "^12.1.4",
     "@nuxtjs/color-mode": "2",
@@ -42,6 +43,7 @@
     "prettier": "^2.3.2",
     "push-dir": "^0.4.1",
     "sass": "^1.42.1",
-    "sass-loader": "^10.2.0"
+    "sass-loader": "^10.2.0",
+    "vue-template-babel-compiler": "^2.0.0"
   }
 }

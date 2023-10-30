@@ -5,6 +5,7 @@ url: https://devi.id/
 img: /projects/devi.png
 alt: DEVI
 status: Finished
+tags: ['polymer']
 start: '2017-05-01T17:00:00.000Z'
 end: '2018-01-30T17:00:00.000Z'
 ---

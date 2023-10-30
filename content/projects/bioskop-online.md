@@ -5,6 +5,7 @@ url: https://bioskoponline.com/
 img: /projects/bioskop-online.png
 alt: Bioskop Online
 status: Ongoing
+tags: ['vuejs', 'nuxtjs', 'tailwindcss']
 start: '2021-11-01T17:00:00.000Z'
 end: '2022-06-17T17:00:00.000Z'
 ---
