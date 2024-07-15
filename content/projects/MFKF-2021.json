@@ -1,0 +1,11 @@
+{
+  "name": "Muslim Friendly Korea Festival (MFKF) 2021",
+  "url": "https://visitkorea.or.id/mfkf2021",
+  "description": "Muslim Friendly Korea Online Festival diselenggarakan oleh Korea Tourism Organization (KTO). Acara ini bertujuan mengobati kerinduan para pencinta Korea sekaligus memberi informasi tentang segala hal yang bersifat ramah Muslim di Korea.",
+  "thumbnail": "/projects/mfkf-web-2021.png",
+  "status": "Ongoing",
+  "opensource": false,
+  "tags": ["vuejs", "nuxtjs", "tailwindcss"],
+  "start": "2021-07-31T17:00:00.000Z",
+  "end": "2021-09-29T17:00:00.000Z"
+}

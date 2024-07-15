@@ -1,0 +1,12 @@
+
+{
+  "name": "Auro Design System",
+  "url": "https://auro.alaskaair.com/",
+  "description": "Auro is a design system that provides a consistent look and feel for Alaska Airlines digital products. It is a collection of reusable components and styles that can be used to build new products and features.",
+  "thumbnail": "/projects/auro.png",
+  "status": "Ongoing",
+  "opensource": false,
+  "tags": ["javascript", "lit", "css", "design-system", "web-components"],
+  "start": "2023-01-01T17:00:00.000Z",
+  "end": "-"
+}

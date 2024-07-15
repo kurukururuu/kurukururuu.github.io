@@ -19,6 +19,10 @@
         <AppUsesItem v-for="(item, id) in desk" :key="id" :item="item" />
       </ul>
       <ul class="space-y-8">
+        <AppUsesHeader title="PC Setup" />
+        <AppUsesItem v-for="(item, id) in pcSetup" :key="id" :item="item" />
+      </ul>
+      <ul class="space-y-8">
         <AppUsesHeader title="Other" />
         <AppUsesItem v-for="(item, id) in other" :key="id" :item="item" />
       </ul>
@@ -28,9 +32,9 @@
 
 <script setup>
 const description =
-  "Software I use, gadgets I love, and other things I recommend. Here’s a big list of all of my favorite stuff.";
+  "Everything that I use to get my work done, from hardware to software, and everything in between. I also share my desk setup and other things that I use.";
 useSeoMeta({
-  title: "Things I use | Fayaz Ahmed",
+  title: "Things I use | Fajar Apriansyah",
   description,
 });
 const { data: items } = await useAsyncData("uses", () =>
@@ -39,5 +43,6 @@ const { data: items } = await useAsyncData("uses", () =>
 const hardware = items.value.filter((item) => item.category === "hardware");
 const software = items.value.filter((item) => item.category === "software");
 const desk = items.value.filter((item) => item.category === "desk");
+const pcSetup = items.value.filter((item) => item.category === "pc-setup");
 const other = items.value.filter((item) => item.category === "others");
 </script>

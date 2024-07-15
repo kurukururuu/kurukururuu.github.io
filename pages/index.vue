@@ -5,7 +5,7 @@
       <HomeSocialLinks />
       <HomeFeaturedProjects />
       <HomeFeaturedArticles />
-      <HomeNewsletter />
+      <HomeContactMe />
     </div>
   </main>
 </template>

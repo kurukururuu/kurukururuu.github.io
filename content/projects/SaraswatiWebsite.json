@@ -1,0 +1,11 @@
+{
+  "name": "Saraswati Global",
+  "url": "https://saraswati.global/",
+  "description": "Saraswati is a private Indonesian company established in 2016 to promote innovation in development.",
+  "thumbnail": "/projects/saraswati.png",
+  "status": "Finished",
+  "opensource": false,
+  "tags": ["vuejs", "nuxtjs", "tailwindcss"],
+  "start": "2017-05-01T17:00:00.000Z",
+  "end": "2018-01-30T17:00:00.000Z"
+}
