@@ -1,4 +1,9 @@
-# Twists and Turns of Web Development (Part 1) - Memory Leaks
+---
+title: "Twists and Turns of Web Development (Part 1) - Memory Leaks"
+description: "Exploring memory leaks in web development and how to prevent them"
+published: 2025/08/01
+slug: "twist-and-turn-of-web-development-part-1"
+---
 
 Over the years, working on both personal and professional web projects, I've come across a few challenges related to memory management in browsers. Memory leaks can be subtle and sometimes hard to spot, but understanding how they happen and why they matter has helped me write more reliable code. I want to share some of what I've learned about memory leaks in browsers, why they're important to watch out for, and some common scenarios where they can occur. We'll also look at ways to detect and fix these issues in our own projects.
 
