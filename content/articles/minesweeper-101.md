@@ -61,3 +61,6 @@ Actually, this is just a combination of two "1-2-boom" pattern, since the "1-2-b
 
 
 That's it, everyone. Hope you enjoy reading this, I will update more strat if I found it in the future while playing this game.
+
+---
+**[Also check my other articles](/articles/)**

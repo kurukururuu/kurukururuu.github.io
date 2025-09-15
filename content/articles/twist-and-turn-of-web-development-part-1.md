@@ -70,3 +70,6 @@ Usually, we always consider using plain objects or arrays to track processed ima
 
 ### Conclusion
 A little bit of outro, but I hope this gives us a clearer understanding of how memory leaks can occur in web development, especially when working with JavaScript. By using one of the tools like `WeakSet`, we can write cleaner, more efficient code that helps prevent memory issues.
+
+---
+**[Also check my other articles](/articles/)**
